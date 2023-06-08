@@ -1,0 +1,10 @@
+<div class="card card-compact w-96 bg-base-100 shadow-xl">
+    <figure><img class="object-contain aspect-square" [src]="product.image" alt="product" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">{{product.name}}</h2>
+      <p>{{product.description}}</p>
+      <div class="card-actions justify-end">
+       <a [routerLink]="[ '/products/', product.id ]" class="btn btn-primary">Buy now</a>
+      </div>
+    </div>
+  </div>

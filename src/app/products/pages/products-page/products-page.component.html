@@ -1,0 +1,13 @@
+<section>
+    <div class="ml-5 mt-10">
+        <h1 class="text-2xl font-bold">Products</h1>
+        <div class="mt-10">
+            <app-search-product></app-search-product>
+        </div>
+    </div>
+
+
+    <div class="m-5 grid grid-cols-4">
+        <app-product-card *ngFor="let product of products" [product]="product"></app-product-card>
+    </div>
+</section>

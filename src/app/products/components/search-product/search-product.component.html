@@ -1,0 +1,9 @@
+<div class="w-full">
+    <input 
+        type="text" 
+        placeholder="Type a query" 
+        class="input input-bordered input-primary w-full max-w-xs" 
+        [(ngModel)]="search"
+        (keyup) = "onSearch()"
+    />
+</div>
